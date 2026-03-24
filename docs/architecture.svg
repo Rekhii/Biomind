@@ -1,0 +1,176 @@
+<svg width="100%" viewBox="0 0 680 980" xmlns="http://www.w3.org/2000/svg">
+<style>
+.svc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #1a1a1a; }
+.svc-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 400; fill: #666; }
+.lbl { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; font-weight: 400; fill: #888; }
+.step { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; font-weight: 600; fill: #185FA5; }
+.svc-box { fill: #f8f8f6; stroke: #ccc; stroke-width: 1; rx: 10; }
+.db-box { fill: #f8f8f6; stroke: #ccc; stroke-width: 1; }
+.arr-exc { stroke: #0F6E56; stroke-width: 1.2; fill: none; }
+.arr-inh { stroke: #A32D2D; stroke-width: 1.2; fill: none; }
+.arr-da { stroke: #BA7517; stroke-width: 1.2; fill: none; stroke-dasharray: 4 3; }
+.arr-ctrl { stroke: #999; stroke-width: 0.8; fill: none; stroke-dasharray: 3 3; }
+.legend-box { fill: #fff; stroke: #ddd; stroke-width: 0.5; rx: 6; }
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-inh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#A32D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-exc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-da" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#BA7517" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-ctrl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#999" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<rect class="legend-box" x="410" y="14" width="255" height="80"/>
+<line x1="426" y1="34" x2="456" y2="34" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="462" y="37">Excitatory (AMPA/NMDA)</text>
+<line x1="426" y1="52" x2="456" y2="52" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="462" y="55">Inhibitory (GABA)</text>
+<line x1="426" y1="70" x2="456" y2="70" class="arr-da" marker-end="url(#ah-da)"/>
+<text class="lbl" x="462" y="73">Dopamine modulation</text>
+<line x1="426" y1="85" x2="456" y2="85" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+<text class="lbl" x="462" y="88">Control / data flow</text>
+
+<rect class="svc-box" x="150" y="110" width="160" height="54"/>
+<text class="svc" x="230" y="134" text-anchor="middle">Cortex (Cx)</text>
+<text class="svc-sub" x="230" y="150" text-anchor="middle">N=204 per channel</text>
+
+<rect class="svc-box" x="40" y="110" width="80" height="54"/>
+<text class="svc" x="80" y="134" text-anchor="middle">CxI</text>
+<text class="svc-sub" x="80" y="150" text-anchor="middle">N=186</text>
+
+<ellipse cx="560" cy="137" rx="50" ry="27" class="db-box"/>
+<text class="svc" x="560" y="134" text-anchor="middle">Reward</text>
+<text class="svc-sub" x="560" y="150" text-anchor="middle">schedule</text>
+
+<rect class="svc-box" x="100" y="250" width="120" height="54"/>
+<text class="svc" x="160" y="274" text-anchor="middle">dSPN (D1)</text>
+<text class="svc-sub" x="160" y="290" text-anchor="middle">Go / N=75</text>
+
+<rect class="svc-box" x="280" y="250" width="120" height="54"/>
+<text class="svc" x="340" y="274" text-anchor="middle">iSPN (D2)</text>
+<text class="svc-sub" x="340" y="290" text-anchor="middle">NoGo / N=75</text>
+
+<rect class="svc-box" x="460" y="250" width="100" height="54"/>
+<text class="svc" x="510" y="274" text-anchor="middle">FSI</text>
+<text class="svc-sub" x="510" y="290" text-anchor="middle">N=75 shared</text>
+
+<rect class="svc-box" x="350" y="400" width="120" height="54"/>
+<text class="svc" x="410" y="424" text-anchor="middle">GPe</text>
+<text class="svc-sub" x="410" y="440" text-anchor="middle">61 Hz pacemaker</text>
+
+<rect class="svc-box" x="350" y="520" width="120" height="54"/>
+<text class="svc" x="410" y="544" text-anchor="middle">STN</text>
+<text class="svc-sub" x="410" y="560" text-anchor="middle">25 Hz, rebound burst</text>
+
+<rect class="svc-box" x="120" y="460" width="140" height="54"/>
+<text class="svc" x="190" y="484" text-anchor="middle">GPi</text>
+<text class="svc-sub" x="190" y="500" text-anchor="middle">71 Hz output gate</text>
+
+<rect class="svc-box" x="120" y="620" width="140" height="54"/>
+<text class="svc" x="190" y="644" text-anchor="middle">Thalamus (Th)</text>
+<text class="svc-sub" x="190" y="660" text-anchor="middle">7 Hz decision gate</text>
+
+<ellipse cx="560" cy="487" rx="55" ry="27" class="db-box"/>
+<text class="svc" x="560" y="484" text-anchor="middle">Q-value</text>
+<text class="svc-sub" x="560" y="500" text-anchor="middle">store</text>
+
+<rect class="svc-box" x="480" y="620" width="140" height="54"/>
+<text class="svc" x="550" y="644" text-anchor="middle">Q-learner</text>
+<text class="svc-sub" x="550" y="660" text-anchor="middle">RPE computation</text>
+
+<ellipse cx="560" cy="750" rx="55" ry="27" class="db-box"/>
+<text class="svc" x="560" y="747" text-anchor="middle">Dopamine</text>
+<text class="svc-sub" x="560" y="763" text-anchor="middle">DA phasic</text>
+
+<rect class="svc-box" x="120" y="780" width="140" height="54"/>
+<text class="svc" x="190" y="804" text-anchor="middle">Trial manager</text>
+<text class="svc-sub" x="190" y="820" text-anchor="middle">3-phase state machine</text>
+
+<rect class="svc-box" x="350" y="880" width="160" height="54"/>
+<text class="svc" x="430" y="904" text-anchor="middle">Plasticity engine</text>
+<text class="svc-sub" x="430" y="920" text-anchor="middle">STDP + E + fDA = dw</text>
+
+<text class="step" x="175" y="210">1</text>
+<path d="M200 164 L160 248" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="155" y="200">AMPA, NMDA</text>
+<text class="lbl" x="155" y="212">(plastic)</text>
+
+<text class="step" x="290" y="210">1</text>
+<path d="M260 164 L320 248" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="295" y="200">AMPA, NMDA</text>
+<text class="lbl" x="295" y="212">(plastic)</text>
+
+<path d="M310 140 L460 270" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="400" y="195">AMPA</text>
+
+<path d="M150 140 L100 140" class="arr-exc" marker-end="url(#ah-exc)"/>
+<path d="M80 164 L210 164" class="arr-inh" marker-end="url(#ah-inh)"/>
+
+<text class="step" x="135" y="360">2</text>
+<path d="M160 304 L190 458" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="143" y="380">GABA</text>
+<text class="lbl" x="143" y="392">eff=2.09</text>
+
+<text class="step" x="330" y="355">2</text>
+<path d="M340 304 L390 398" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="345" y="355">GABA</text>
+<text class="lbl" x="345" y="367">eff=4.07</text>
+
+<path d="M510 304 L200 255" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="400" y="310">GABA blanket</text>
+<path d="M510 304 L360 255" class="arr-inh" marker-end="url(#ah-inh)"/>
+
+<text class="step" x="378" y="485">3</text>
+<path d="M380 454 L380 518" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="385" y="490">GABA</text>
+
+<text class="step" x="290" y="510">3</text>
+<path d="M410 574 L260 512" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="305" y="530">NMDA (all)</text>
+<text class="lbl" x="305" y="542">broad brake</text>
+
+<path d="M470 547 L470 454" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="476" y="500">AMPA, NMDA</text>
+
+<text class="step" x="168" y="570">4</text>
+<path d="M190 514 L190 618" class="arr-inh" marker-end="url(#ah-inh)"/>
+<text class="lbl" x="198" y="570">GABA</text>
+<text class="lbl" x="198" y="582">eff=0.33</text>
+
+<text class="step" x="68" y="400">5</text>
+<path d="M135 674 L70 674 L70 140 L148 140" class="arr-exc" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="50" y="400">NMDA</text>
+<text class="lbl" x="50" y="412">feedback</text>
+
+<path d="M190 674 L160 304" class="arr-exc" stroke-width="0.8" opacity="0.5" marker-end="url(#ah-exc)"/>
+<text class="lbl" x="140" y="700">AMPA to striatum</text>
+
+<text class="step" x="300" y="650">6</text>
+<path d="M260 647 L478 647" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+<text class="lbl" x="350" y="640">Th rate > 30 Hz?</text>
+
+<text class="step" x="580" y="590">7</text>
+<path d="M560 164 L560 460" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+
+<path d="M550 514 L550 618" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+<text class="lbl" x="565" y="570">Q[action]</text>
+
+<text class="step" x="580" y="690">8</text>
+<path d="M550 674 L560 723" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+<text class="lbl" x="510" y="700">RPE = R - Q</text>
+<text class="lbl" x="510" y="712">DA = RPE x 80</text>
+
+<text class="step" x="350" y="770">9</text>
+<path d="M505 750 L260 800" class="arr-da" marker-end="url(#ah-da)"/>
+<text class="lbl" x="350" y="760">Inject DA phasic</text>
+
+<path d="M190 834 L190 870 L350 900" class="arr-ctrl" marker-end="url(#ah-ctrl)"/>
+<text class="lbl" x="200" y="860">Trigger weight update</text>
+
+<text class="step" x="300" y="920">10</text>
+<path d="M350 907 L222 282" class="arr-da" marker-end="url(#ah-da)"/>
+<text class="lbl" x="248" y="910">Update Cx-dSPN</text>
+<text class="lbl" x="248" y="922">AMPA weights</text>
+
+<path d="M430 880 L370 290" class="arr-da" marker-end="url(#ah-da)"/>
+</svg>
