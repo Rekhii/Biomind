@@ -9,7 +9,7 @@ Simulates ~3,000 leaky integrate-and-fire neurons organized into 9 brain nuclei,
 ## System Architecture
 
 <p align="center">
-  <img src="docs/architecture.svg" alt="BioMind-BG System Architecture" width="700"/>
+  <img src="docs/bg_circuit.png" alt="BioMind-BG System Architecture" width="700"/>
 </p>
 
 **Decision flow:**
